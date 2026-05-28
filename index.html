@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluey Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🐕 Bluey's Adventure 🐕</h1>
+            <div class="score-board">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="lives">Lives: <span id="lives">3</span></div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="player" id="player"></div>
+            
+            <div class="obstacles" id="obstacles"></div>
+            <div class="collectibles" id="collectibles"></div>
+        </div>
+
+        <div class="controls">
+            <p>Use ARROW KEYS or A/D to move | SPACE to jump</p>
+            <button id="startBtn" class="btn">Start Game</button>
+            <button id="pauseBtn" class="btn" disabled>Pause</button>
+        </div>
+
+        <div id="gameOverScreen" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="gameOverText">Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
